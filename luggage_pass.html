@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUGGAGE PASS | 신세계백화점 외국인 맞춤형 핸드프리 쇼핑 솔루션</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shinsegae: {
+                            red: '#8A1538',
+                            darkred: '#5c0d24',
+                            gold: '#C5A059',
+                            goldlight: '#f5efe0',
+                            charcoal: '#1A1A1A',
+                            graybg: '#F9F9FB'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', 'Plus Jakarta Sans', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(26,26,26,0.92) 0%, rgba(138,21,56,0.88) 100%), 
+                        url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #E6C875 0%, #C5A059 50%, #9B783E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-shinsegae-red selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-200" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-shinsegae-red text-white flex items-center justify-center font-bold text-xl rounded-lg shadow-md tracking-tighter">
+                    SSG
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider text-shinsegae-charcoal block leading-none">LUGGAGE PASS</span>
+                    <span class="text-[10px] text-shinsegae-gold tracking-widest uppercase font-semibold">Shinsegae Retail Tech</span>
+                </div>
+            </div>
+
+            <nav class="hidden xl:flex items-center space-x-6 text-sm font-medium text-gray-700">
+                <a href="#summary" class="hover:text-shinsegae-red transition-colors">사업개요</a>
+                <a href="#persona" class="hover:text-shinsegae-red transition-colors">타깃 & 여정</a>
+                <a href="#solutions" class="hover:text-shinsegae-red transition-colors">4대 핵심솔루션</a>
+                <a href="#welcome-center" class="hover:text-shinsegae-red transition-colors">웰컴센터</a>
+                <a href="#pricing" class="hover:text-shinsegae-red transition-colors">패스 & 멤버십</a>
+                <a href="#aitech" class="hover:text-shinsegae-red transition-colors">AI 빅데이터</a>
+                <a href="#roadmap" class="hover:text-shinsegae-red transition-colors">오픈 로드맵</a>
+                <a href="./01/web1.html" class="inline-flex items-center gap-1.5 font-bold text-shinsegae-red hover:text-shinsegae-darkred transition-colors bg-red-50 px-3 py-1.5 rounded-lg border border-red-200">
+                    <i class="fa-solid fa-clipboard-question text-xs"></i>
+                    <span>설문조사</span>
+                </a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <span class="hidden lg:inline-block text-xs font-semibold px-3 py-1 bg-shinsegae-goldlight text-shinsegae-red rounded-full border border-shinsegae-gold/30">
+                    부산대학교 아이디어톤 2조
+                </span>
+                <a href="#pricing" class="bg-shinsegae-red hover:bg-shinsegae-darkred text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-md hover:shadow-lg">
+                    패스 체험하기
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg pt-36 pb-24 text-white relative overflow-hidden">
+        <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-shinsegae-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-xs font-semibold text-shinsegae-gold">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        <span>방한 외국인 관광객(FIT) 맞춤형 모빌리티·쇼핑 솔루션</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+                        쇼핑이 여행이 되는 순간<br>
+                        <span class="gold-gradient-text">"Shop more. Carry less."</span>
+                    </h1>
+                    <p class="text-gray-300 text-lg max-w-2xl font-light leading-relaxed">
+                        사는 건 고객이, 들고 다니는 건 백화점이.<br>
+                        선충전 결제부터 매장 간 자동 집결, 공항 직송 배송까지 — 카드 한 장으로 완성되는 신세계백화점의 차세대 핸즈프리(Hands-free) 리테일 에코시스템.
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-4">
+                        <a href="#solutions" class="bg-shinsegae-gold hover:bg-amber-600 text-gray-900 font-bold px-7 py-3.5 rounded-xl transition-all shadow-lg text-sm flex items-center space-x-2">
+                            <span>핵심 기능 살펴보기</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="./01/web1.html" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3.5 rounded-xl backdrop-blur-md border border-white/20 transition-all text-sm flex items-center space-x-2">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>설문조사 참여하기</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Mini Dashboard -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card rounded-2xl p-6 text-gray-800 shadow-2xl relative border border-white/40">
+                        <div class="flex justify-between items-center pb-4 border-b border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 rounded-full bg-shinsegae-red text-white flex items-center justify-center font-bold text-xs">
+                                    PASS
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm">LUGGAGE PASS DIGITAL</h3>
+                                    <p class="text-xs text-gray-500">Holder: Qing Qing ( 대만 )</p>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-green-100 text-green-700 font-semibold text-xs rounded-full">ACTIVE</span>
+                        </div>
+
+                        <div class="py-5 space-y-4">
+                            <div class="bg-gray-50 p-3.5 rounded-xl border border-gray-100 flex justify-between items-center">
+                                <div>
+                                    <span class="text-xs text-gray-500 block">잔여 충전금 (Balance)</span>
+                                    <span class="text-lg font-bold text-shinsegae-red">₩ 450,000</span>
+                                </div>
+                                <span class="text-xs bg-shinsegae-goldlight text-shinsegae-red font-bold px-2 py-1 rounded">Gold Tier</span>
+                            </div>
+
+                            <div class="space-y-2">
+                                <div class="flex justify-between text-xs font-semibold text-gray-600">
+                                    <span>실시간 쇼핑백 집결 현황</span>
+                                    <span class="text-shinsegae-red font-bold">3개 매장 완료</span>
+                                </div>
+                                <div class="space-y-1.5 text-xs">
+                                    <div class="flex items-center justify-between bg-white p-2 rounded border border-gray-100">
+                                        <span class="flex items-center gap-2"><i class="fa-solid fa-bag-shopping text-shinsegae-gold"></i> 템버린즈 (Tamburins)</span>
+                                        <span class="text-green-600 font-medium"><i class="fa-solid fa-circle-check"></i> 집결 완료</span>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-white p-2 rounded border border-gray-100">
+                                        <span class="flex items-center gap-2"><i class="fa-solid fa-shirt text-shinsegae-gold"></i> 마르디 메크르디</span>
+                                        <span class="text-green-600 font-medium"><i class="fa-solid fa-circle-check"></i> 집결 완료</span>
+                                    </div>
+                                    <div class="flex items-center justify-between bg-white p-2 rounded border border-gray-100">
+                                        <span class="flex items-center gap-2"><i class="fa-solid fa-plane text-shinsegae-red"></i> 인천공항 (ICN) 직송</span>
+                                        <span class="text-blue-600 font-medium"><i class="fa-solid fa-truck-fast"></i> 17:30 도착 예정</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-shinsegae-charcoal text-white rounded-xl p-3 flex items-center justify-between text-xs">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-solid fa-weight-hanging text-shinsegae-gold text-base"></i>
+                                <span>현재 지닌 짐의 무게</span>
+                            </div>
+                            <span class="font-bold text-sm text-shinsegae-gold">0 kg (100% Free)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXECUTIVE SUMMARY KEY METRICS -->
+    <section id="summary" class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Executive Summary</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-2">외국인 관광객의 Pain Point를 성장 기회로 혁신</h2>
+                <p class="text-gray-600 text-sm mt-3">단순한 짐 보관을 넘어, 체류시간 2배 연장 및 객단가 극대화를 이끄는 All-in-One 플랫폼</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-100 text-center hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 mx-auto bg-red-100 text-shinsegae-red rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                    </div>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-1">0 kg</div>
+                    <p class="text-xs font-bold text-shinsegae-red uppercase mb-2">쇼핑 이동 피로도 경감</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">캐리어와 쇼핑백의 직접 휴대 부담을 완벽히 제거하여 피로도 70% 감소</p>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-100 text-center hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 mx-auto bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-1">5.5 시간</div>
+                    <p class="text-xs font-bold text-amber-700 uppercase mb-2">평균 체류 시간 연장</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">기존 2.5시간에서 2배 이상 연장, 백화점 내 F&B 및 문화 체험 확산</p>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-100 text-center hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 mx-auto bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-1">+35%</div>
+                    <p class="text-xs font-bold text-blue-700 uppercase mb-2">외국인 객단가 상승</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">선충전 멤버십 혜택과 두 손의 자유로 1인당 추가 구매 품목 +2.3개 증대</p>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-100 text-center hover:shadow-lg transition-all">
+                    <div class="w-12 h-12 mx-auto bg-purple-100 text-purple-700 rounded-full flex items-center justify-center mb-4 text-xl">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </div>
+                    <div class="text-3xl font-extrabold text-gray-900 mb-1">92%</div>
+                    <p class="text-xs font-bold text-purple-700 uppercase mb-2">백화점 재방문 의향</p>
+                    <p class="text-xs text-gray-500 leading-relaxed">출국 전 공항 일괄 수령을 통한 마지막 여행 경험의 극적인 만족도 개선</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONA & CUSTOMER JOURNEY MAP -->
+    <section id="persona" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Target & Insights</span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 mt-2">핵심 타깃 페르소나 및 고객 여정 분석</h2>
+                </div>
+                <p class="text-gray-500 text-sm mt-2 md:mt-0 max-w-md">
+                    방한 외국인 FIT(개인 자유여행객) MZ세대의 페르소나 '칭칭'의 동선을 통해 LUGGAGE PASS가 해결하는 혁신적 가치를 확인하세요.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 mb-12">
+                <!-- Persona Card -->
+                <div class="lg:col-span-4 bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+                    <div class="flex items-center space-x-4 border-b border-gray-100 pb-5 mb-5">
+                        <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-shinsegae-red to-amber-500 p-1">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300" alt="Qing Qing" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold px-2 py-0.5 bg-shinsegae-goldlight text-shinsegae-red rounded">핵심 페르소나</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-1">칭칭 (Qing Qing, 28세)</h3>
+                            <p class="text-xs text-gray-500">대만 타이베이 거주 / 마케터</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="flex justify-between py-1 border-b border-gray-50">
+                            <span class="text-gray-500">방한 동행/일정</span>
+                            <span class="font-semibold text-gray-800">친구 1명 / 6박 7일</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-gray-50">
+                            <span class="text-gray-500">쇼핑 예산</span>
+                            <span class="font-semibold text-shinsegae-red">약 100만 원</span>
+                        </div>
+                        <div class="flex justify-between py-1 border-b border-gray-50">
+                            <span class="text-gray-500">방문 목적</span>
+                            <span class="font-semibold text-gray-800">IVE 콘서트 & K-컬처·패션</span>
+                        </div>
+                        <div class="flex justify-between py-1">
+                            <span class="text-gray-500">쇼핑 성향</span>
+                            <span class="font-semibold text-gray-800">충동구매형 맥시멀리스트</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-t border-gray-100">
+                        <p class="text-xs font-bold text-gray-900 mb-2">💡 Core Pain Points</p>
+                        <ul class="text-xs text-gray-600 space-y-1.5 list-disc pl-4">
+                            <li>쇼핑 후 공항 이동 시 캐리어·쇼핑백 무게로 인한 체력 방전</li>
+                            <li>국내 전화번호 부재로 인기 카페/식당 모바일 웨이팅 불가</li>
+                            <li>한국 의류 사이즈 표기 차이 및 피팅 불편</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Journey Map Table / Stepper -->
+                <div class="lg:col-span-8 bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-base text-gray-900 mb-4 flex items-center justify-between">
+                            <span>Customer Journey Map & Emotional Curve</span>
+                            <span class="text-xs font-normal text-gray-500">7단계 여정별 감정변화 및 솔루션</span>
+                        </h3>
+
+                        <div class="space-y-3 text-xs">
+                            <!-- Step 1 -->
+                            <div class="p-3 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-[10px]">1</span>
+                                    <div>
+                                        <span class="font-bold text-gray-800">백화점 도착 및 짐 맡기기</span>
+                                        <p class="text-gray-500 text-[11px]">무거운 캐리어를 끌고 지하철 이동 후 보관 번거로움</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="px-2 py-0.5 rounded bg-green-100 text-green-700 font-bold text-[10px]">설렘 (+2)</span>
+                                    <p class="text-[11px] text-shinsegae-red font-semibold">→ 도착 즉시 웰컴 컨시어지 위탁</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="p-3 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-[10px]">2</span>
+                                    <div>
+                                        <span class="font-bold text-gray-800">매장 탐색 & 키오스크</span>
+                                        <p class="text-gray-500 text-[11px]">복잡한 동선, 키오스크 다국어 안내 부족</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="px-2 py-0.5 rounded bg-amber-100 text-amber-700 font-bold text-[10px]">답답함 (-1)</span>
+                                    <p class="text-[11px] text-shinsegae-red font-semibold">→ 실시간 모바일 길찾기 제공</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="p-3 rounded-xl bg-red-50/60 border border-red-100 flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-6 h-6 rounded-full bg-red-200 text-shinsegae-red font-bold flex items-center justify-center text-[10px]">4</span>
+                                    <div>
+                                        <span class="font-bold text-gray-800">패션/뷰티 쇼핑 & 사이즈</span>
+                                        <p class="text-gray-500 text-[11px]">사이즈 표기 차이, 품절 및 쇼핑백 증가</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="px-2 py-0.5 rounded bg-red-100 text-red-700 font-bold text-[10px]">화남/불편 (-2)</span>
+                                    <p class="text-[11px] text-shinsegae-red font-semibold">→ 글로벌 사이즈표 & 매장 자동 집결</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="p-3 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-[10px]">5</span>
+                                    <div>
+                                        <span class="font-bold text-gray-800">유명 카페 휴식 & 웨이팅</span>
+                                        <p class="text-gray-500 text-[11px]">한국 번호 없어 태블릿 웨이팅 불가능</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="px-2 py-0.5 rounded bg-gray-200 text-gray-700 font-bold text-[10px]">불편 (-1) → 만족 (+2)</span>
+                                    <p class="text-[11px] text-shinsegae-red font-semibold">→ 여권/이메일 연동 글로벌 웨이팅</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 7 -->
+                            <div class="p-3 rounded-xl bg-amber-50/60 border border-amber-100 flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="w-6 h-6 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-[10px]">7</span>
+                                    <div>
+                                        <span class="font-bold text-gray-800">공항 이동 및 출국</span>
+                                        <p class="text-gray-500 text-[11px]">짐 피로 누적으로 방한 경험 대폭 저하</p>
+                                    </div>
+                                </div>
+                                <div class="text-right">
+                                    <span class="px-2 py-0.5 rounded bg-red-100 text-red-700 font-bold text-[10px]">극심한 피로 (-2)</span>
+                                    <p class="text-[11px] text-shinsegae-red font-semibold">→ 공항 직송 배송(Deliver) 완결</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 CORE SOLUTIONS -->
+    <section id="solutions" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Key Features</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-2">『LUGGAGE PASS』 4대 핵심 솔루션</h2>
+                <p class="text-gray-600 text-sm mt-3">결제·보관·집결·배송·VIP 리워드를 단 하나의 실물/모바일 패스로 통합합니다.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Pillar 1 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:border-shinsegae-red transition-all hover:shadow-xl group bg-white">
+                    <div class="w-14 h-14 bg-red-50 text-shinsegae-red rounded-xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-shinsegae-red group-hover:text-white transition-colors">
+                        01
+                    </div>
+                    <span class="text-xs font-bold text-shinsegae-gold uppercase tracking-wider block mb-1">PAY</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">선충전 통합 결제</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        백화점 내 모든 브랜드, F&B, 팝업스토어에서 현금/카드 교환 없이 사전 충전금으로 원스톱 결제. Tax Refund 연동으로 즉시 환급 일원화.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:border-shinsegae-red transition-all hover:shadow-xl group bg-white">
+                    <div class="w-14 h-14 bg-amber-50 text-amber-700 rounded-xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                        02
+                    </div>
+                    <span class="text-xs font-bold text-shinsegae-gold uppercase tracking-wider block mb-1">COLLECT</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">매장별 자동 집결</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        구매 시 패스만 태그하면 쇼핑백을 직접 들고 다닐 필요 없이 신세계 백화점 내부 물류 라인을 통해 지하 중앙 센터로 자동 수거 및 집결.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:border-shinsegae-red transition-all hover:shadow-xl group bg-white">
+                    <div class="w-14 h-14 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                        03
+                    </div>
+                    <span class="text-xs font-bold text-shinsegae-gold uppercase tracking-wider block mb-1">DELIVER</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">공항 직항 배송</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        위탁 수하물(캐리어)과 구매품을 당일 지정 시간까지 인천/김해공항 신세계 전용 데스크로 안전 직송하여 출국 전 일괄 수령 지원.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="border border-gray-200 rounded-2xl p-6 hover:border-shinsegae-red transition-all hover:shadow-xl group bg-white">
+                    <div class="w-14 h-14 bg-purple-50 text-purple-700 rounded-xl flex items-center justify-center text-2xl font-black mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        04
+                    </div>
+                    <span class="text-xs font-bold text-shinsegae-gold uppercase tracking-wider block mb-1">MEMBERSHIP</span>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">글로벌 우대 리워드</h3>
+                    <p class="text-gray-600 text-xs leading-relaxed">
+                        충전 금액에 따른 브랜드 5~10% 즉시 할인, VIP/글로벌 라운지 무료 이용, 웰컴 드링크 및 K-뷰티 스페셜 샘플 키트 제공.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Service Flow Step Interactive -->
+            <div class="mt-16 bg-shinsegae-charcoal text-white p-8 rounded-3xl relative overflow-hidden">
+                <h3 class="text-xl font-bold mb-6 flex items-center gap-3 text-shinsegae-gold">
+                    <i class="fa-solid fa-route"></i>
+                    <span>Service Flow (서비스 상세 운영 프로세스 5단계)</span>
+                </h3>
+
+                <div class="grid md:grid-cols-5 gap-4 relative z-10 text-xs">
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                        <span class="text-shinsegae-gold font-bold block mb-1">STEP 1</span>
+                        <h4 class="font-bold text-sm mb-1">패스 구매/충전</h4>
+                        <p class="text-gray-300">온라인/웰컴센터 방문, 여권 등록, 등급 선택 및 충전(30/50/100만 원)</p>
+                    </div>
+
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                        <span class="text-shinsegae-gold font-bold block mb-1">STEP 2</span>
+                        <h4 class="font-bold text-sm mb-1">러기지 보관</h4>
+                        <p class="text-gray-300">웰컴센터 내 수하물 위탁 (RF 바코드 태그 부착), 가벼운 몸으로 쇼핑 시작</p>
+                    </div>
+
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                        <span class="text-shinsegae-gold font-bold block mb-1">STEP 3</span>
+                        <h4 class="font-bold text-sm mb-1">원태그 스캔</h4>
+                        <p class="text-gray-300">입점 매장 결제 시 LUGGAGE PASS 태그, 전용 물류백 패킹 및 지하 중앙센터 이송</p>
+                    </div>
+
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                        <span class="text-shinsegae-gold font-bold block mb-1">STEP 4</span>
+                        <h4 class="font-bold text-sm mb-1">중앙 집결/운송</h4>
+                        <p class="text-gray-300">고객 ID별 1차 패킹 검수 후 제휴 특송 전문 물류 차량으로 공항 직송</p>
+                    </div>
+
+                    <div class="bg-white/10 p-4 rounded-xl border border-white/10">
+                        <span class="text-shinsegae-gold font-bold block mb-1">STEP 5</span>
+                        <h4 class="font-bold text-sm mb-1">공항 인도 수령</h4>
+                        <p class="text-gray-300">공항 출국장 신세계 전용 데스크 방문, 여권 확인 후 일괄 수령 및 출국</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WELCOME CENTER SPACE STRATEGY -->
+    <section id="welcome-center" class="py-20 bg-shinsegae-graybg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Offline Touchpoint</span>
+                    <h2 class="text-3xl font-extrabold text-gray-900 leading-tight">
+                        오프라인 거점:<br>『웰컴센터 (Welcome Center)』
+                    </h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        약 10~15평 규모의 콤팩트한 프리미엄 컨시어지 형태로 설계되며, 지하철 연결통로 또는 1층 면세/안내 인접 공간 등 최고 접근성 구역에 배치됩니다.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 p-3.5 bg-white rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-shinsegae-red text-white flex items-center justify-center shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">통합 안내 데스크 (Front Concierge)</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">다국어 응대 전문 인력 상주. 고속 패스 발급, 택스리펀, 전반적 컨시어지 수행</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-3.5 bg-white rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-amber-600 text-white flex items-center justify-center shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">스마트 러기지 보관함 (Luggage Storage)</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">규격별 보관함. 입고 즉시 RFID/바코드 부착, 공항 배송 1:1 매칭 보안 잠금</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-3.5 bg-white rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 font-bold">3</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">글로벌 라운지 & 휴게 공간 (Global Lounge)</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">프리이빗 좌석, 무선 충전, 와이파이, 전통 차 및 웰컴 드링크 제공</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-3.5 bg-white rounded-xl border border-gray-200">
+                            <div class="w-10 h-10 rounded-lg bg-purple-600 text-white flex items-center justify-center shrink-0 font-bold">4</div>
+                            <div>
+                                <h4 class="font-bold text-sm text-gray-900">디지털 사이니지 & 키오스크 (Digital Signage)</h4>
+                                <p class="text-xs text-gray-500 mt-0.5">실시간 배송 현황, 플로어 맵, 당일 추천 K-트렌드 팝업 및 포토존 안내</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-6 rounded-3xl shadow-xl border border-gray-200 relative">
+                        <div class="flex justify-between items-center mb-6">
+                            <span class="font-bold text-gray-800 text-sm">웰컴센터 조감 레이아웃 시뮬레이션</span>
+                            <span class="text-xs bg-shinsegae-goldlight text-shinsegae-red px-3 py-1 rounded-full font-bold">백화점 저층부 15평형</span>
+                        </div>
+
+                        <!-- Layout Grid Simulation -->
+                        <div class="grid grid-cols-2 gap-4 h-96">
+                            <div class="bg-red-50 p-4 rounded-2xl border-2 border-dashed border-red-200 flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-shinsegae-red text-sm">① 프런트 컨시어지</span>
+                                    <i class="fa-solid fa-headset text-shinsegae-red text-xl"></i>
+                                </div>
+                                <p class="text-[11px] text-gray-600">다국어 상주 인력 / 패스 발급 / 택스리펀 상담</p>
+                            </div>
+
+                            <div class="bg-amber-50 p-4 rounded-2xl border-2 border-dashed border-amber-200 flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-amber-800 text-sm">② RFID 수하물 보관</span>
+                                    <i class="fa-solid fa-boxes-stacked text-amber-800 text-xl"></i>
+                                </div>
+                                <p class="text-[11px] text-gray-600">캐리어 모니터링 / 바코드 매칭 및 중앙 이송 출구</p>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-2xl border-2 border-dashed border-blue-200 flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-blue-800 text-sm">③ 글로벌 프리미엄 라운지</span>
+                                    <i class="fa-solid fa-couch text-blue-800 text-xl"></i>
+                                </div>
+                                <p class="text-[11px] text-gray-600">휴게 공간 / 웰컴 드링크 / 스마트 충전</p>
+                            </div>
+
+                            <div class="bg-purple-50 p-4 rounded-2xl border-2 border-dashed border-purple-200 flex flex-col justify-between">
+                                <div class="flex justify-between items-center">
+                                    <span class="font-bold text-purple-800 text-sm">④ 미디어 사이니지 & 포토존</span>
+                                    <i class="fa-solid fa-tv text-purple-800 text-xl"></i>
+                                </div>
+                                <p class="text-[11px] text-gray-600">실시간 공항 운송 현황판 / SNS UGC 포토월</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WELCOME CENTER 9:16 SHORTS VIDEO SECTION -->
+            <div class="mt-16 bg-white p-8 rounded-3xl shadow-lg border border-gray-200">
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1 bg-red-100 text-shinsegae-red font-bold text-xs rounded-full mb-2">
+                        <i class="fa-solid fa-circle-play"></i>
+                        <span>9:16 SHORTS PREVIEW</span>
+                    </span>
+                    <h3 class="text-2xl font-bold text-gray-900">웰컴센터 현장 경험 & 홍보 영상</h3>
+                    <p class="text-xs text-gray-500 mt-1">LUGGAGE PASS 웰컴센터 이용 가이드 및 핸즈프리 쇼핑 현장을 숏폼 영상으로 확인하세요.</p>
+                </div>
+
+                <div class="flex justify-center">
+                    <!-- Mobile Mockup Wrapper -->
+                    <div class="relative w-full max-w-[320px] bg-shinsegae-charcoal rounded-[2.5rem] p-3.5 shadow-2xl border-4 border-gray-800">
+                        <!-- Camera Notch / Speaker -->
+                        <div class="absolute top-6 left-1/2 -translate-x-1/2 w-28 h-4 bg-gray-900 rounded-full z-20 flex items-center justify-center">
+                            <div class="w-3 h-3 rounded-full bg-gray-800 mr-2"></div>
+                            <div class="w-10 h-1 rounded-full bg-gray-800"></div>
+                        </div>
+                        
+                        <!-- 9:16 Video Container -->
+                        <div class="relative w-full aspect-[9/16] rounded-[2rem] overflow-hidden bg-black flex items-center justify-center">
+                            <video 
+                                src="영상 완성본 (1).mp4" 
+                                controls 
+                                playsinline 
+                                loop 
+                                class="w-full h-full object-cover"
+                            >
+                                브라우저가 비디오 재생을 지원하지 않습니다.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING & MEMBERSHIP SIMULATOR -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Pricing & Tiers</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-2">패스 라인업 및 선충전 멤버십 혜택</h2>
+                <p class="text-gray-600 text-sm mt-3">이용권 요금과 쇼핑 충전금을 분리 설계하여 결제 장벽을 낮추고 추가 소비를 유도합니다.</p>
+            </div>
+
+            <!-- Pass Lineup Cards -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Day Pass -->
+                <div class="border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all relative">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">1일권</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">DAY PASS</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-gray-900">₩ 20,000</span>
+                        <span class="text-xs text-gray-500"> / 당일 이용</span>
+                    </div>
+                    <ul class="text-xs text-gray-600 space-y-3 mb-8 border-t border-gray-100 pt-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 당일 캐리어 무료 보관</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 매장 구매품 자동 집결</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 공항 일반 배송 (지정시간 인계)</li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold rounded-xl text-xs transition-colors">선택하기</button>
+                </div>
+
+                <!-- Stay Pass (Highlighted) -->
+                <div class="border-2 border-shinsegae-red rounded-3xl p-8 hover:shadow-2xl transition-all relative bg-gradient-to-b from-white to-red-50/30">
+                    <div class="absolute -top-3.5 right-6 bg-shinsegae-red text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        ★ 칭칭 추천 / 베스트
+                    </div>
+                    <span class="text-xs font-bold text-shinsegae-red uppercase tracking-widest">최대 7일 체류권</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">STAY PASS</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-shinsegae-red">₩ 35,000</span>
+                        <span class="text-xs text-gray-500"> / 체류기간 반복</span>
+                    </div>
+                    <ul class="text-xs text-gray-600 space-y-3 mb-8 border-t border-gray-100 pt-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-shinsegae-red"></i> 체류 기간 중 반복 보관</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-shinsegae-red"></i> 당일 및 최종일 공항 배송</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-shinsegae-red"></i> 주요 브랜드 할인 쿠폰팩 제공</li>
+                    </ul>
+                    <button class="w-full py-3 bg-shinsegae-red hover:bg-shinsegae-darkred text-white font-bold rounded-xl text-xs transition-colors shadow-md">선택하기</button>
+                </div>
+
+                <!-- Premium Pass -->
+                <div class="border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all relative">
+                    <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">특급 케어</span>
+                    <h3 class="text-2xl font-bold text-gray-900 mt-1">PREMIUM PASS</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-extrabold text-gray-900">₩ 50,000</span>
+                        <span class="text-xs text-gray-500"> / 하이엔드 전용</span>
+                    </div>
+                    <ul class="text-xs text-gray-600 space-y-3 mb-8 border-t border-gray-100 pt-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> 특급 우선 배송 (Express)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> VIP 라운지 무제한 이용</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> 웰컴 기프트 & 전담 버틀러 안내</li>
+                    </ul>
+                    <button class="w-full py-3 bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold rounded-xl text-xs transition-colors">선택하기</button>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE TIER SIMULATOR -->
+            <div class="bg-shinsegae-graybg p-8 rounded-3xl border border-gray-200 max-w-4xl mx-auto">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900">선충전 멤버십 혜택 시뮬레이터</h3>
+                    <p class="text-xs text-gray-500 mt-1">예상 쇼핑 충전금을 조절하여 등급별 프리미엄 혜택을 확인해보세요.</p>
+                </div>
+
+                <!-- Range Slider -->
+                <div class="mb-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-bold text-gray-600">충전 금액 설정:</span>
+                        <span id="charge-amount-text" class="text-xl font-extrabold text-shinsegae-red">₩ 500,000</span>
+                    </div>
+                    <input type="range" id="charge-range" min="100000" max="1500000" step="100000" value="500000" class="w-full accent-shinsegae-red cursor-pointer">
+                    <div class="flex justify-between text-[11px] text-gray-400 mt-1">
+                        <span>10만 원</span>
+                        <span>30만 원 (Silver)</span>
+                        <span>50만 원 (Gold)</span>
+                        <span>100만 원+ (Platinum)</span>
+                    </div>
+                </div>
+
+                <!-- Dynamic Tier Output Card -->
+                <div id="tier-result-card" class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div id="tier-badge-icon" class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl font-extrabold">
+                            GOLD
+                        </div>
+                        <div>
+                            <span id="tier-title" class="text-lg font-bold text-gray-900">Gold 멤버십 적용</span>
+                            <p id="tier-desc" class="text-xs text-gray-500 mt-0.5">50만 원 이상 선충전 시 제공되는 스마트 리워드</p>
+                        </div>
+                    </div>
+
+                    <div class="border-t md:border-t-0 md:border-l border-gray-100 pt-4 md:pt-0 md:pl-6 w-full md:w-auto">
+                        <span class="text-xs font-bold text-gray-400 block mb-2">언락되는 전용 혜택:</span>
+                        <ul id="tier-benefits-list" class="text-xs text-gray-700 space-y-1.5">
+                            <!-- JS injected -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI & BIG DATA DEMAND FORECASTING -->
+    <section id="aitech" class="py-20 bg-shinsegae-charcoal text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-gold">Data Infrastructure</span>
+                <h2 class="text-3xl font-extrabold mt-2">AI & 빅데이터 기반 실시간 수요예측 인프라</h2>
+                <p class="text-gray-400 text-sm mt-3">LUGGAGE PASS는 관광객의 실시간 쇼핑 로그를 축적하여 백화점 MD와 재고를 최적화하는 파이프라인입니다.</p>
+            </div>
+
+            <!-- 5 Step Data Flow -->
+            <div class="grid md:grid-cols-5 gap-4 mb-16 text-xs">
+                <div class="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-shinsegae-gold transition-all">
+                    <div class="text-shinsegae-gold font-bold text-sm mb-2">01. 데이터 수집</div>
+                    <p class="text-gray-300 leading-relaxed">태그 결제 시 구매 품목, 수량, 결제 시각, 국적, 체류 기간 실시간 로그 자동 적재</p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-shinsegae-gold transition-all">
+                    <div class="text-shinsegae-gold font-bold text-sm mb-2">02. AI 정밀 분석</div>
+                    <p class="text-gray-300 leading-relaxed">국적별 선호 브랜드, 방한 목적(콘서트 등) 및 시즌별 구매 패턴 시계열 머신러닝 분석</p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-shinsegae-gold transition-all">
+                    <div class="text-shinsegae-gold font-bold text-sm mb-2">03. 수요 예측</div>
+                    <p class="text-gray-300 leading-relaxed">급증 품목(뷰티+42%, 팝업+37%) 품절 사전 감지 및 비인기 품목 과잉 재고 최소화</p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-shinsegae-gold transition-all">
+                    <div class="text-shinsegae-gold font-bold text-sm mb-2">04. MD 반영</div>
+                    <p class="text-gray-300 leading-relaxed">인기 상품 선제 발주, 층별 매장 간 재고 실시간 재배분 및 맞춤형 타깃 프로모션 실행</p>
+                </div>
+
+                <div class="bg-white/5 p-5 rounded-2xl border border-white/10 hover:border-shinsegae-gold transition-all">
+                    <div class="text-shinsegae-gold font-bold text-sm mb-2">05. 경험 혁신</div>
+                    <p class="text-gray-300 leading-relaxed">품절 없는 쇼핑과 취향 맞춤형 최적 쇼핑 동선 큐레이션을 모바일 앱으로 추천</p>
+                </div>
+            </div>
+
+            <!-- Dual AI Engine Split -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-server text-shinsegae-gold text-xl"></i>
+                        <h3 class="font-bold text-base">운영 AI (백화점 관제용)</h3>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-2 list-disc pl-4">
+                        <li>K-POP 콘서트, 벚꽃 시즌 등 단기 이벤트 수요 급등 모델링</li>
+                        <li>시간대별 공항 배송 물류량 사전 예측 및 배차 최적화</li>
+                        <li>웰컴센터 현장 응대 인력 및 수하물 처리 알리고리즘 가동</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/10 p-6 rounded-2xl border border-white/10">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fa-solid fa-mobile-screen-button text-shinsegae-gold text-xl"></i>
+                        <h3 class="font-bold text-base">고객 AI (사용자 맞춤형)</h3>
+                    </div>
+                    <ul class="text-xs text-gray-300 space-y-2 list-disc pl-4">
+                        <li>과거 구매 이력 기반 '칭칭 맞춤형 장원영 핫템 투어 코스' 제안</li>
+                        <li>매장별 실시간 재고 확인 및 모바일 웨이팅 동시 연동</li>
+                        <li>언어별 맞춤 텍스리펀 자동 계산 및 공항 인도 시각 알림</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OPEN ROADMAP SECTION -->
+    <section id="roadmap" class="py-20 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Open Roadmap</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-2">LUGGAGE PASS 오픈 로드맵</h2>
+                <p class="text-gray-600 text-sm mt-3">단계별 점포 확장 및 인프라 고도화 전략</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-200 relative overflow-hidden">
+                    <span class="text-xs font-bold text-shinsegae-red uppercase tracking-wider block mb-2">Phase 1 (2026.Q3)</span>
+                    <h3 class="font-bold text-base text-gray-900 mb-2">센텀시티점 시범 도입</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-4">글로벌 관광객 방문 비율이 높은 부산 센텀시티점 웰컴센터 구축 및 1차 공항 직송 수하물 인프라 테스트.</p>
+                    <span class="inline-block bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded">현재 완료 / 시범 가동</span>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-200 relative overflow-hidden">
+                    <span class="text-xs font-bold text-shinsegae-gold uppercase tracking-wider block mb-2">Phase 2 (2026.Q4)</span>
+                    <h3 class="font-bold text-base text-gray-900 mb-2">본점 & 강남점 확장</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-4">수도권 핵심 거점 점포 확장. 인천공항 터미널 1/2 신세계 인도 전용 카운터 정식 오픈 및 AI 자동화 연동.</p>
+                    <span class="inline-block bg-amber-100 text-amber-800 text-[10px] font-bold px-2 py-0.5 rounded">진행 예정</span>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-200 relative overflow-hidden">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-2">Phase 3 (2027.Q1)</span>
+                    <h3 class="font-bold text-base text-gray-900 mb-2">면세점 & 모빌리티 얼라이언스</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-4">신세계면세점 통합 연동, 주요 항공사 체크인 연계 및 호텔 배송 얼라이언스 제휴 네트워크 확장.</p>
+                    <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-bold px-2 py-0.5 rounded">기획 중</span>
+                </div>
+
+                <div class="bg-shinsegae-graybg p-6 rounded-2xl border border-gray-200 relative overflow-hidden">
+                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider block mb-2">Phase 4 (2027.Q3)</span>
+                    <h3 class="font-bold text-base text-gray-900 mb-2">글로벌 리테일 테크 패키징</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-4">해외 백화점 파트너십 및 글로벌 통합 트래블 패스 시스템 수출/라이선싱 추진.</p>
+                    <span class="inline-block bg-gray-200 text-gray-700 text-[10px] font-bold px-2 py-0.5 rounded">장기 비전</span>
+                </div>
+            </div>
+
+            <!-- SURVEY CALL TO ACTION BANNER -->
+            <div class="mt-12 bg-gradient-to-r from-shinsegae-red to-shinsegae-darkred text-white p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                <div>
+                    <span class="px-3 py-1 bg-white/20 text-white text-xs font-bold rounded-full mb-2 inline-block">고객 만족도 및 의견 수렴</span>
+                    <h3 class="text-2xl font-bold">LUGGAGE PASS 서비스 개선 설문조사에 참여해주세요!</h3>
+                    <p class="text-xs text-gray-200 mt-1">소중한 의견을 반영하여 더 나은 핸즈프리 쇼핑 환경을 만들어가겠습니다.</p>
+                </div>
+                <a href="./01/web1.html" class="bg-shinsegae-gold hover:bg-amber-600 text-gray-900 font-bold px-6 py-3.5 rounded-xl transition-all shadow-lg text-xs whitespace-nowrap flex items-center gap-2">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <span>설문조사 이동하기 (./01/web1.html)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETITIVE ADVANTAGE & BM -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-shinsegae-red">Business Model & Edge</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-2">비즈니스 모델 및 압도적 차별성</h2>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden mb-12">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-xs text-left">
+                        <thead class="bg-gray-100 text-gray-700 font-bold uppercase border-b border-gray-200">
+                            <tr>
+                                <th class="p-4">비교 항목</th>
+                                <th class="p-4">기존 시내면세점 인도장</th>
+                                <th class="p-4">도심 사전 수하물 위탁</th>
+                                <th class="p-4 bg-red-50 text-shinsegae-red">신세계 LUGGAGE PASS</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-gray-600">
+                            <tr>
+                                <td class="p-4 font-bold text-gray-900">서비스 대상</td>
+                                <td class="p-4">면세점 내 구매품에 한정</td>
+                                <td class="p-4">기존 캐리어 수하물만</td>
+                                <td class="p-4 bg-red-50/40 font-bold text-shinsegae-red">백화점 전 매장 구매품 + 캐리어 일체</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-gray-900">쇼핑 중 핸즈프리</td>
+                                <td class="p-4">부분적 (시내 백화점 이동 시 미제공)</td>
+                                <td class="p-4">해당 없음 (쇼핑백 직접 운반)</td>
+                                <td class="p-4 bg-red-50/40 font-bold text-shinsegae-red">완벽한 핸즈프리 (구매 즉시 자동 집결)</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-gray-900">적용 영역</td>
+                                <td class="p-4">면세 품목 국한</td>
+                                <td class="p-4">해당 없음</td>
+                                <td class="p-4 bg-red-50/40 font-bold text-shinsegae-red">F&B, 패션, 명품, 팝업스토어 전 구역</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-gray-900">결제 & 멤버십</td>
+                                <td class="p-4">면세점 별도 회원제</td>
+                                <td class="p-4">단순 서비스 요금 결제</td>
+                                <td class="p-4 bg-red-50/40 font-bold text-shinsegae-red">선충전 결제 + 백화점 VIP 우대 리워드</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-gray-900">AI 데이터 연계</td>
+                                <td class="p-4">단순 면세 데이터 수집</td>
+                                <td class="p-4">수하물 이동 로그만 존재</td>
+                                <td class="p-4 bg-red-50/40 font-bold text-shinsegae-red">실시간 취향 데이터 기반 수요예측 연동</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Revenue Streams Grid -->
+            <div class="grid md:grid-cols-4 gap-6 text-xs">
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <span class="font-bold text-shinsegae-red block mb-1">1. Pass 이용권 수익</span>
+                    <p class="text-gray-500">Day, Stay, Premium 이용권 판매에 따른 직접적인 서비스 수수료 수익</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <span class="font-bold text-shinsegae-red block mb-1">2. 입점 매장 파트너십</span>
+                    <p class="text-gray-500">참여 브랜드 매장 집결 물류 대행 수수료 및 추가 매출 견인 연계</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <span class="font-bold text-shinsegae-red block mb-1">3. 모빌리티·물류 제휴</span>
+                    <p class="text-gray-500">공항, 항공사, 글로벌 물류사(CJ대한통운, 한진 등) 제휴 커미션</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl border border-gray-200">
+                    <span class="font-bold text-shinsegae-red block mb-1">4. 객단가 상승 효과</span>
+                    <p class="text-gray-500">두 손의 자유로 인한 충동구매 촉진으로 외국인 객단가 35% 이상 증대</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-shinsegae-charcoal text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-gray-400">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <div class="flex items-center space-x-2 text-white font-bold text-lg mb-1">
+                        <span class="text-shinsegae-gold">SHINSEGAE</span>
+                        <span>LUGGAGE PASS</span>
+                    </div>
+                    <p>신세계백화점 외국인 관광객 맞춤형 핸드프리 쇼핑 솔루션 기획서</p>
+                </div>
+
+                <div class="flex items-center gap-6">
+                    <a href="#roadmap" class="hover:text-white transition-colors">오픈 로드맵</a>
+                    <a href="./01/web1.html" class="hover:text-shinsegae-gold font-semibold transition-colors">설문조사</a>
+                </div>
+
+                <div class="text-right">
+                    <p class="font-semibold text-white">기획 주체: 부산대학교 아이디어톤 2조</p>
+                    <p class="mt-1 text-gray-500">적용 대상: 신세계백화점 (본점 / 강남점 / 센텀시티점 등)</p>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-800 text-center text-gray-600">
+                &copy; 2026 Shinsegae Retail Tech Proposal. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Interactive Tier Calculator
+        const chargeRange = document.getElementById('charge-range');
+        const chargeAmountText = document.getElementById('charge-amount-text');
+        const tierBadgeIcon = document.getElementById('tier-badge-icon');
+        const tierTitle = document.getElementById('tier-title');
+        const tierDesc = document.getElementById('tier-desc');
+        const tierBenefitsList = document.getElementById('tier-benefits-list');
+
+        function updateTierInfo(val) {
+            const formatted = new Intl.NumberFormat('ko-KR').format(val);
+            chargeAmountText.innerText = `₩ ${formatted}`;
+
+            if (val >= 1000000) {
+                // Platinum
+                tierBadgeIcon.className = "w-16 h-16 rounded-2xl bg-purple-100 text-purple-800 flex items-center justify-center text-xl font-extrabold";
+                tierBadgeIcon.innerText = "PLATINUM";
+                tierTitle.innerText = "Platinum 멤버십 최고 등급 적용";
+                tierDesc.innerText = "100만 원 이상 선충전 VVIP 우대 혜택";
+                tierBenefitsList.innerHTML = `
+                    <li class="flex items-center gap-2 text-purple-900 font-semibold"><i class="fa-solid fa-star text-purple-600"></i> 전 브랜드 10% 우대 할인권</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> VIP 라운지 무제한 이용권 (동반 인원 포함)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> 특급 배송 (Express) 무료 업그레이드</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-600"></i> K-럭셔리 스페셜 기프트 세트 증정</li>
+                `;
+            } else if (val >= 500000) {
+                // Gold
+                tierBadgeIcon.className = "w-16 h-16 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-extrabold";
+                tierBadgeIcon.innerText = "GOLD";
+                tierTitle.innerText = "Gold 멤버십 우대 등급 적용";
+                tierDesc.innerText = "50만 원 이상 선충전 스마트 쇼퍼 리워드";
+                tierBenefitsList.innerHTML = `
+                    <li class="flex items-center gap-2 text-amber-900 font-semibold"><i class="fa-solid fa-star text-amber-600"></i> 주요 브랜드 7% 할인 쿠폰팩</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> 글로벌 라운지 이용권 (동반 1인 가능)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-600"></i> 공항 배송비 50% 감면 혜택</li>
+                `;
+            } else if (val >= 300000) {
+                // Silver
+                tierBadgeIcon.className = "w-16 h-16 rounded-2xl bg-gray-200 text-gray-800 flex items-center justify-center text-xl font-extrabold";
+                tierBadgeIcon.innerText = "SILVER";
+                tierTitle.innerText = "Silver 멤버십 기본 등급 적용";
+                tierDesc.innerText = "30만 원 이상 선충전 혜택";
+                tierBenefitsList.innerHTML = `
+                    <li class="flex items-center gap-2 text-gray-900 font-semibold"><i class="fa-solid fa-star text-gray-600"></i> 주요 패션/F&B 5% 할인권 3매</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-gray-600"></i> K-뷰티 스타터 샘플 키트 증정</li>
+                `;
+            } else {
+                // Basic
+                tierBadgeIcon.className = "w-16 h-16 rounded-2xl bg-gray-100 text-gray-500 flex items-center justify-center text-xl font-extrabold";
+                tierBadgeIcon.innerText = "STANDARD";
+                tierTitle.innerText = "일반 선충전 미달성";
+                tierDesc.innerText = "30만 원 이상 충전 시 Silver 혜택이 시작됩니다.";
+                tierBenefitsList.innerHTML = `
+                    <li class="text-gray-400">30만 원 이상 충전 시 5% 할인권 및 K-뷰티 키트 제공</li>
+                `;
+            }
+        }
+
+        chargeRange.addEventListener('input', (e) => {
+            updateTierInfo(e.target.value);
+        });
+
+        // Initialize default tier info
+        updateTierInfo(500000);
+    </script>
+</body>
+</html>
